@@ -27,7 +27,7 @@ module.exports = class sqlGenerator {
 
             this.code += ('DROP TABLE IF EXISTS '+ entity.name +';\n');
 
-            this.code += ('CREATE TABLE ' + entity.name + '( \n');
+            this.code += ('CREATE TABLE ' + entity.name + '(\n');
 
             if(entity.attr.length > 0) {
               let pk = false;
@@ -52,7 +52,7 @@ module.exports = class sqlGenerator {
               this.code += ('\n');
             }
             else {
-              this.code += ('id INT AUTO_INCREMENT PRIMARY KEY \n');
+              this.code += ('id INT AUTO_INCREMENT PRIMARY KEY\n');
             }
             this.code += (');\n\n');
         }
