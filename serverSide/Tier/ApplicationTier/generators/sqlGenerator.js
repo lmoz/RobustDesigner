@@ -1,3 +1,15 @@
+/*
+* File: sqlGenerator.js
+* Version: 1.0
+* Type: javascript
+* Date: 2018-09-05
+* Author: Marco Masiero
+* E-mail: JurassicSWE@gmail.com
+*
+* License: GNU General Public License v3.0
+*
+*/
+
 'use strict'
 
 module.exports = class sqlGenerator {
@@ -30,14 +42,14 @@ module.exports = class sqlGenerator {
                   );
                   if(attribute.primaryKey === 'true')
                     pk = true;
-                  if( i === entity.attr.length-1)
-                    this.code +=('\n');
-                    else {
-                      this.code +=(',\n');
-                    }
+                  if( i !== entity.attr.length-1)
+                      this.code += (',\n');
               }
-              if(!pk)
-                this.code += (',\n id INT AUTO_INCREMENT PRIMARY KEY \n');
+              if(!pk){
+				  this.code += (',\n');
+				  this.code += ('id INT AUTO_INCREMENT PRIMARY KEY');
+			  }
+              this.code += ('\n');
             }
             else {
               this.code += ('id INT AUTO_INCREMENT PRIMARY KEY \n');
