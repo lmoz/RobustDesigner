@@ -2,8 +2,8 @@
 * File: index.js
 * Version: 1.0
 * Type: javascript
-* Date: 2018-08-16
-* Author: Gianluca Travasci
+* Date: 2018-09-05
+* Author: Lidia
 * E-mail: JurassicSWE@gmail.com
 *
 * License: GNU General Public License v3.0
