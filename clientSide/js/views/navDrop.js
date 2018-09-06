@@ -1,9 +1,9 @@
 /*
 * File: navDrop.js
-* Version: 1.0
+* Version: 1.1
 * Type: javascript
-* Date: 2018-08-16
-* Author: Francesco Minna
+* Date: 2018-09-05
+* Author: Lidia
 * E-mail: JurassicSWE@gmail.com
 *
 * License: GNU General Public License v3.0
